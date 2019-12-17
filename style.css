@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+html {
+   box-sizing: border-box;
+   background-color: #4CAF50;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+body {
+   font-family: Georgia, serif;
+   min-width: 600px;
+}
+
+h1 {
+   color: white;
+   font-family: Arial;
+   text-align: center;
+   background-color: #7EBD81;
+}
+
+fieldset {
+   background-color: #7EBD81;
+   float: left;
+   display: flex;
+   align-items: center;
+}
+
+legend {
+   font-family: Arial;
+   color: white;
+   font-weight: bold;
+}
+
+textarea {
+   display: block;
+}
+
+div{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.drawdiv{
+   background-color: #7EBD81;
+}
+
+.drawArea{
+   cursor: crosshair;
+}
+
+.tools-menu{
+
+  display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.tool-set-buttons{
+   background-color: #4CAF50;
+    border: none;
+    color: white;
+ 
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    justify-content: flex-start;
+    width: 90px;
+}
+
+.tool-set-buttons:hover {
+   background-color: #3e8e41
+   box-shadow: 0 1px #666;
+   transform: translateY(1px);
+}
+
+.tool-set-buttons:disabled {
+   background-color: #7b9e7c;
+}
+
+.tool-set-buttons:active {
+  background-color: #308040;
+  box-shadow: -1px -1px #2d542f;
+  transform: translateY(2px);
+}
+
+.tool-set{
+	display: flex;
+	flex-direction: column;
+}
+
+.options{
+
+}
+.stroke-buttons{
+  border-color: #428a44;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  padding: 5px;
+  background-color:  #4CAF59;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Arial;
+}
+
+.option-buttons{
+	display: flex;
+	float: left;
+	flex-direction: row;
+}
+
+.prop{
+	float: left;
+	display: flex;
+  	flex-direction:row;
+}
+
+.stroke-size{
+   width: 100px;
+}
+

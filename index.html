@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+
+<meta charset="UTF-8" />
+<title>A Paint-like Web Application!</title>
+
+<link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<h1>Start Drawing Below!</h1>
+
+<div id = "drawArea div" class = "drawdiv">
+
+ <div class = "prop">
+   <fieldset class="tools-menu">
+         <legend>Tools</legend>
+         <div class="tool-set" id="tools">
+            <button class="tool-set-buttons" id="pencil-tool" type="button">Pencil</button>
+            <button class="tool-set-buttons" id="spray-tool" type="button">Spray</button>
+            <button class="tool-set-buttons" id="eraser-tool" type="button">Eraser</button>
+            <p></p>
+            <button class="tool-set-buttons" id="line-tool" type="button">Line</button>
+           
+            <button class="tool-set-buttons" id="fill-tool" type="button">Fill</button>
+            <button class="tool-set-buttons" id="rectangle-tool" type="button">Rectangle</button>
+            <button class="tool-set-buttons" id="circle-tool" type="button">Circle</button>
+            
+            <p></p>
+            <button class="tool-set-buttons" id="undo" type="button">Undo</button>
+            <button class="tool-set-buttons" id="redo" type="button">Redo</button>
+            <button class="tool-set-buttons" id="save" type="button">Save</button>
+            <button class="tool-set-buttons" id="export" type="button">Export</button>
+         </div>
+      
+         <div class="stroke-buttons" id="optionList">
+            <label>Stroke Color</label>
+               <input id="color-picker" type="color" />
+            <label>Fill Color</label>
+               <input id="fill-color-picker" type="color" />
+            <label>Stroke Size</label>
+               <input class="stroke-size" id="stroke-size" type="number" />
+            <label>Line Style </label>
+               <select id="line-cap">
+                  <option value='round'>Smooth</option>
+                  <option value='square'>Shaky</option>
+                  <option value='butt'>Choppy</option>
+               </select> 
+         </div> 
+    </fieldset>
+    
+   </div>
+   <canvas class = "drawArea" id="myCanvas"></canvas>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
